@@ -72,6 +72,7 @@ Les paramètres qui recevraient normalement des mises à jour plus petites ou mo
 
 Par exemple, dans les réseaux profonds, les gradients peuvent devenir petits aux premières couches et il est judicieux d'augmenter les taux d'apprentissage pour les paramètres correspondants. Un autre avantage de cette approche est que, comme les taux d'apprentissage sont ajustés automatiquement, le réglage manuel devient moins important. 
 
+Remarque pour la lecture du notebook si impossible de lire via github : lecture via collab/github/yasminef98
 
 
 

@@ -3,8 +3,23 @@
 ![](header.png)
 
 ## Contexte du projet : 
-Créer un  algorithme permettant d'identifier la présence de  cancers métastatiques à partir d’images histologiques.
+Problème de computer vision ayant pour but la détection du cancer en identifiant les tissus métastatiques à partir d'images de Microscopies-Scanner de lames de ganglions lymphatiques grâce au Deep Learning.
 Les images sont obtenues à partir  d'examens microscopiques de biopsies chirurgical qui traitées et fixées sur des lames de verre. Pour visualiser les différents composants du tissu sous un microscope, les coupes sont teintées avec de l’hématéine (teint le noyau des celles en bleu, violet très foncée) et l’éosine (colore le cytoplasme en rose).
+
+### Motivation :
+Les ganglions lymphatiques sont de petites glandes qui filtrent le liquide dans le système lymphatique et ils sont le premier endroit où un cancer du sein est susceptible de se propager. L'évaluation histologique des métastases des ganglions lymphatiques fait partie de la détermination du stade du cancer du sein dans la classification TNM (système international classant les cancers selon leur extension anatomique ).
+
+La procédure de diagnostic pour les pathologistes est fastidieuse et longue car il faut examiner une grande surface de tissu et il est facile de ne pas détecter de petites métastases.
+
+C'est pourquoi l'utilisation de l'apprentissage automatique est un choix judicieux, tant en termes de précision que de facilité d'utilisation. 
+
+### Données à disposition 
+
+Les données sont composées de 220 025 images d'entrainements et le jeu de test est composé de 57 468 images.
+
+Indication de Kaggle sur les images à disposition :
+
+" L'ensemble de données original du PCam contient des images dupliquées en raison de son échantillonnage probabiliste, cependant, la version présentée sur Kaggle ne contient pas de doublons. Par ailleurs, nous avons conservé les mêmes données et les mêmes splits que le référentiel PCam. Vous prévoyez les étiquettes des images dans le dossier de test. Une étiquette positive indique que la région centrale 32x32px d'un patch contient au moins un pixel de tissu tumoral. Le tissu tumoral dans la région extérieure du patch n'a pas d'influence sur l'étiquette. Cette région extérieure est prévue pour permettre des modèles entièrement convolutionnels qui n'utilisent pas de rembourrage zéro, afin d'assurer un comportement cohérent lorsqu'ils sont appliqués à une image complète."
 
 ## Métrique utilisée : Courbe ROC-AUC
 Mesure de performance pour les problèmes de classification : mesure la capacité du modèle à distinguer les images de coupes presentant des cellules cancéreuses et les images de coupes ne presentant pas de cellules cancereuses 

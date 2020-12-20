@@ -1,6 +1,6 @@
 # Histopathologic Cancer Detection
 Identify metastatic tissue in histopathologic scans of lymph node sections
-![Test Image 1](https://www.google.com/search?q=histopathologie+images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjp0-POydztAhW-A2MBHVG-CXoQ_AUoAXoECAcQAw&biw=1600&bih=702#imgrc=d4gGhLJdMCvyeM)
+![Test Image 1]("https://storage.googleapis.com/kaggle-competitions/kaggle/11848/logos/header.png?t=2018-11-15-01-52-19")
 
 ## Contexte du projet : 
 Créer un  algorithme permettant d'identifier la présence de  cancers métastatiques à partir d’images histologiques.

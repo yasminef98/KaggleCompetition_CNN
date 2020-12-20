@@ -1,5 +1,5 @@
-# Histopathologic Cancer Detection
-Identify metastatic tissue in histopathologic scans of lymph node sections
+# "Histopathologic Cancer Detection"
+Identifier les tissus métastatiques dans les scans histopathologiques des sections de ganglions lymphatiques
 ![](header.png)
 
 ## Contexte du projet : 
@@ -13,12 +13,15 @@ Mesure de performance pour les problèmes de classification : mesure la capacit�
 
 Une courbe ROC (receiver operating characteristic) est un graphique représentant les performances d'un modèle de classification pour tous les seuils de classification. Cette courbe trace le taux de vrais positifs en fonction du taux de faux positifs :
 Vrai positive, vrai négative, faux positif, faux negatif calculés à partir de la matrice de confusion :
+
 ![](matrice_confusion.png)
 
-•	Taux de vrais positifs (TVP)= > sensibilité
-  •	Sensibilité = (vrai positif)/(vra positifs+faux negatifs)
-•	Taux de faux positifs => 1-  specificité
-  •	TFP= faux positifs/(faux positifs+vrai negatifs)
+* Taux de vrais positifs (TVP)= > sensibilité
+
+  Sensibilité = (vrai positif)/(vra positifs+faux negatifs)
+*	Taux de faux positifs => 1- specificité
+
+  TFP= faux positifs/(faux positifs+vrai negatifs)
   
 En médecine, la sensibilité d'un test diagnostic est ainsi sa capacité à détecter un maximum de malades (c'est-à-dire à avoir le moins de faux négatifs), tandis que la spécificité de ce test est sa capacité à ne détecter que les malades (avoir le moins de faux positifs). Une courbe ROC trace les valeurs TVP et TFP pour différents seuils de classification. Diminuer la valeur du seuil de classification permet de classer plus d'éléments comme positifs, ce qui augmente le nombre de faux positifs et de vrais positifs. La figure ci-dessous représente une courbe ROC classique. (le modèle sera performant pour deceler les cs positifs. L’interet dans ce cas c’est que le modèle aura moins de chanche de classer des images cancereurses comme non cancereuses. Problème : si un cas est négétifs, il risquera d’etre classé comme positifs( sera en ralité un faux positifs) 
 
@@ -26,7 +29,7 @@ En médecine, la sensibilité d'un test diagnostic est ainsi sa capacité à dé
 Avec une Ric_Auc de cette forme (AUC =1), alors le modèle distingue parfaitement les classes positives et negatives.
 
 ![](roc_auc2.png)
-Lorsque AUC = 0,5, le classificateur prédit une classe aléatoirement 
+Lorsque AUC = 0.5, le classificateur prédit une classe aléatoirement 
 
 Ainsi, plus la valeur AUC d'un classificateur est élevée, meilleure est sa capacité à faire la distinction entre les classes positives et négatives.
 Interet d’utiliser cette métrique pour ce sujet : 
